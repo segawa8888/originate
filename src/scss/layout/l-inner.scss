@@ -1,0 +1,13 @@
+@use 'foundation' as *;
+
+.l-inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    @include mq(md) {
+        max-width: $inner;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+    }
+}

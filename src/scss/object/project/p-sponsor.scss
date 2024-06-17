@@ -1,0 +1,135 @@
+@use 'foundation' as *;
+
+.p-sponsor {
+    margin-top: prem(120);
+    padding-top: prem(75);
+    background-color: $c-gray;
+    padding-bottom: prem(60);
+    @include mq(md) {
+        margin-top: prem(280);
+        padding-top: prem(110);
+        padding-bottom: prem(110);
+    }
+}
+
+.p-sponsor__title-content {
+    @include mq(md) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+.p-sponsor__text {
+    margin-top: prem(56);
+    font-size: prem(15);
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+    @include mq(md) {
+        margin-top:initial;
+        font-size: prem(16);
+        letter-spacing: 0.96px;
+    }
+}
+
+.p-sponsor__content {
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: prem(82);
+    }
+}
+
+.p-sponsor__items {
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.p-sponsor__item-wrap {
+    @include mq(md) {
+        max-width: prem(364);
+    }
+}
+
+.p-sponsor__item-wrap:nth-child(n+2) {
+    margin-top: prem(20);
+    @include mq(md) {
+        margin-left: prem(40);
+    }
+}
+
+.p-sponsor__item-title {
+    display: flex;
+    align-items: center;
+    gap:0 prem(5);
+    font-size: prem(16);
+    font-weight: $medium;
+    letter-spacing: 0.64px;
+    font-family: $font-accent;
+    @include mq(md) {
+        font-size: prem(20);
+        font-family: $font-accent;
+        font-weight: $bold;
+    }
+
+    span {
+        width:prem(20);
+        @include mq(md) {
+            width:prem(30);
+        }
+    }
+}
+
+.p-sponsor__item-img {
+    background-color: $c-white;
+    border-radius: prem(5);
+    margin-top: prem(15);
+}
+
+.p-sponsor__item-text {
+    text-align: right;
+    margin-top: prem(5);
+}
+
+.p-sponsor__item-text a {
+    font-size: prem(10);
+    text-decoration: underline;
+    position: relative;
+    letter-spacing: 0.7px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left:prem(-15);
+        background-image: url(../images/icon/icon_link_bk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:prem(10);
+        height:prem(10);
+    }
+}
+
+.p-sponsor-lists__title {
+    display: flex;
+    align-items: center;
+    gap:0 prem(5);
+    font-size: prem(16);
+    font-weight: $medium;
+    letter-spacing: 0.64px;
+    font-family: $font-accent;
+    margin-top: prem(40);
+    @include mq(md) {
+        font-size: prem(20);
+        font-family: $font-accent;
+        font-weight: $bold;
+        margin-top: prem(60);
+    }
+
+    span {
+        width:prem(20);
+        @include mq(md) {
+            width:prem(30);
+        }
+    }
+}

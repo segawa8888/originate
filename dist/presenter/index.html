@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>Originate - Presenter</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' integrity='sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==' crossorigin='anonymous'/>
+  <!-- JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js' integrity='sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+  <header class="p-header l-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="../index.html">
+          <img src="../images/common/logo_bk.png" alt="Originate">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="../index.html#concept">コンセプト</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../index.html#timetable">タイムテーブル</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../index.html#flow">参加方法</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../index.html#outline">イベント概要</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../index.html#faq">よくある質問</a>
+          </li>
+          <li class="p-header__nav-item p-header__nav-item--contact">
+            <a href="../index.html#" target="_blank" rel="noopener">参加申込をする</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="p-header__wrap">
+        <a href="#" class="p-header__contact">参加申込</a>
+        <button class="p-header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__drawer js-drawer">
+          <nav class="p-header__drawer-nav">
+            <ul class="p-header__drawer-items">
+              <li class="p-header__drawer-item">
+                <a href="../index.html">top<br><span>トップ</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="../index.html#timetable">time table<br><span>タイムテーブル</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="../index.html#presenter">presenter<br><span>ピッチ登壇者</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="../index.html#guests">guest<br><span>ゲスト</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="../index.html#outline">outline<br><span>イベント概要</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="../index.html#faq">faq<br><span>よくある質問</span></a>
+              </li>
+              <li class="p-header__drawer-item p-header__drawer-item--contact">
+                <a href="#" target="_blank" rel="noopener">イベント参加申込をする</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="p-sub-presenter">
+      <div class="p-sub-presenter__wrapper">
+        <div class="p-sub-presenter__inner l-inner">
+          <div class="p-sub-presenter__mv">
+            <div class="p-sub-presenter__mv-items">
+              <div class="p-sub-presenter__mv-item">
+                <p class="c-sub-main-title js-fade">presenter</p>
+                <p class="p-sub-presenter__mv-title js-fade">テキストが入りますテキストが入りますテキストが入ります</p>
+                <div class="p-sub-presenter__mv-statuses">
+                  <p class="p-sub-presenter__mv-status js-fade">FEMTECH Original Product Wholesale</p>
+                  <p class="p-sub-presenter__mv-status js-fade">OEM Branding</p>
+                </div>
+                <p class="p-sub-presenter__mv-name js-fade">馬場 早希さん</p>
+              </div>
+              <div class="p-sub-presenter__mv-item js-fade">
+                <div class="p-sub-presenter__mv-img">
+                  <img src='../images/presenter/presenter01.png' alt='馬場 早希さん' width='' height='' loading='lazy'>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-sub-presenter-details">
+      <div class="p-sub-presenter-details__wrapper">
+        <div class="p-sub-presenter-details__inner l-inner">
+          <div class="p-sub-presenter-details__items">
+            <div class="p-sub-presenter-details__item js-fade">
+              <p class="p-sub-presenter-details__item-title">事業内容は？</p>
+              <p class="p-sub-presenter-details__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+            </div>
+            <div class="p-sub-presenter-details__item js-fade">
+              <p class="p-sub-presenter-details__item-title">起業のきっかけは？</p>
+              <p class="p-sub-presenter-details__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+            </div>
+            <div class="p-sub-presenter-details__item js-fade">
+              <p class="p-sub-presenter-details__item-title">起業のきっかけは？</p>
+              <p class="p-sub-presenter-details__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+            </div>
+            <div class="p-sub-presenter-details__item js-fade">
+              <p class="p-sub-presenter-details__item-title">会社情報</p>
+              <p class="p-sub-presenter-details__item-text">
+                <a href="">https://xxxxxxxxx.com</a>
+              </p>
+            </div>
+          </div>
+          <a href="" class="c-btn -black p-sub-presenter-details__btn js-fade">元のページに戻る</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guests" class="p-sub-guests">
+      <div class="p-guests__wrapper">
+        <div class="p-guests__inner l-inner">
+          <p class="c-sub-main-title js-fade">他のプレゼンターを見る</p>
+          <div class="p-guests__items">
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="../images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="../images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title p-sub-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="l-page-top c-page-top js-page-top">
+  </div>
+
+  <footer class="p-footer">
+    <div class="p-footer__wrapper">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__content">
+          <div class="p-footer__logo">
+            <a href="../index.html">
+              <img src="../images/common/logo_wh.png" width="" height="" alt="Originate" />
+            </a>
+          </div>
+          <nav class="p-footer-nav p-footer__nav">
+            <div class="p-footer-nav__items">
+              <div class="p-footer-nav__item">
+                <span class="p-footer-nav__title">event</span>
+                <ul class="p-footer-nav__lists">
+                  <li class="p-footer-nav__list">
+                    <a href="../index.html#concept">コンセプト</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="../index.html#timetable">タイムテーブル</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="../index.html#presenter">ピッチ登壇者</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="../index.html#guests">ゲスト</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-footer-nav__item">
+                <span class="p-footer-nav__title">contact</span>
+                <ul class="p-footer-nav__lists">
+                  <li class="p-footer-nav__list p-footer-nav__list--contact">
+                    <a href="contact">お問い合わせフォーム</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <p class="p-footer__copyright">© 2024 originate inc.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

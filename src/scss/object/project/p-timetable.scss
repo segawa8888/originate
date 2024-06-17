@@ -1,0 +1,161 @@
+@use 'foundation' as *;
+
+.p-timetable {
+    margin-top: prem(60);
+    padding-top: prem(75);
+    padding-bottom: prem(60);
+    background-color: $c-gray;
+    @include mq(md) {
+        margin-top: prem(110);
+        padding-top: prem(150);
+        padding-bottom: prem(97);
+    }
+}
+
+.p-timetable__content {
+    margin-top: prem(56);
+    @include mq(md) {
+        margin-top: prem(82);
+    }
+}
+
+.p-timetable__item {
+    @include mq(md) {
+        display: flex;
+        gap:0 prem(40);
+    }
+}
+
+.p-timetable__item:nth-child(n+2) {
+    margin-top: prem(15);
+    @include mq(md) {
+        margin-top: prem(30);
+    }
+}
+
+.p-timetable__item-content {
+    border-radius: prem(5);
+    background-color: $c-white;
+    @include mq(md) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.p-timetable__item:nth-child(odd) .p-timetable__item-content {
+    border:prem(1) solid $c-black;
+}
+
+.p-timetable__item:nth-child(even) .p-timetable__item-content {
+    border:prem(1) solid $c-blue;
+}
+
+.p-timetable__item-time {
+    font-size: prem(15);
+    font-weight: $bold;
+    line-height: 1.7;
+    @include mq(md) {
+        font-size: prem(22);
+    }
+}
+
+.p-timetable__item:nth-child(odd) .p-timetable__item-time {
+    color: $c-black;
+}
+
+.p-timetable__item:nth-child(even) .p-timetable__item-time {
+    color: $c-blue;
+}
+
+.p-timetable__item-heading {
+    border-radius: prem(5);
+    padding:prem(10) prem(15);
+    color: $c-white;
+    font-weight: $medium;
+    font-size: prem(18);
+    letter-spacing: 0.36px;
+    @include mq(md) {
+        font-size: prem(20);
+        letter-spacing: 0.8px;
+        padding:prem(10) prem(20);
+        letter-spacing: 0.9px;
+    }
+}
+
+.p-timetable__item:nth-child(odd) .p-timetable__item-heading {
+    background-color: $c-black;
+}
+
+.p-timetable__item:nth-child(even) .p-timetable__item-heading {
+    background-color: $c-blue;
+}
+
+.p-timetable__item-text {
+    font-size: prem(15);
+    padding:prem(15) prem(19) prem(20) prem(19);
+    font-weight: $regular;
+    border-radius: 0 0 prem(5) prem(5);
+    @include mq(md) {
+        font-size: prem(16);
+        padding:prem(10) prem(78) prem(20) prem(35);
+    }
+}
+
+.p-timetable__item-members {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: prem(30);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: prem(15);
+    margin-top: prem(20);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-bottom: prem(20);
+    @include mq(md) {
+        display: flex;
+        flex-wrap:wrap;
+        gap:0 prem(66);
+        padding-left: prem(20);
+        padding-right: prem(20);
+    }
+}
+
+.p-timetable__item-member {
+    @include mq(md) {
+        max-width: prem(99);
+        width: 100%;
+    }
+}
+
+.p-timetable__item-member__name {
+    font-size: prem(14);
+    font-weight: $medium;
+    margin-top: prem(7);
+    @include mq(md) {
+        font-size: prem(16);
+        margin-top: prem(10);
+    }
+
+}
+
+.p-timetable__item-member-text {
+    font-size: prem(12);
+    font-weight: $regular;
+    letter-spacing: 0.48px;
+    line-height: 1.5;
+    margin-top: prem(7);
+    @include mq(md) {
+        margin-top: prem(10);
+    }
+}
+
+.p-timetable__item-member-status {
+    font-size: prem(12);
+    font-weight: $regular;
+    letter-spacing: 0.48px;
+    line-height: 1.5;
+    margin-top: prem(3);
+    @include mq(md) {
+        margin-top: prem(5);
+    }
+}

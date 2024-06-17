@@ -1,0 +1,11 @@
+@use 'foundation' as *;
+
+.l-page-top {
+    position: fixed;
+    right: prem(12);
+    bottom: prem(30);
+    @include mq(md) {
+        right:prem(60);
+        bottom:prem(20);
+    }
+}

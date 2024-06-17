@@ -1,0 +1,35 @@
+@use 'foundation' as *;
+
+.p-flow {
+    margin-top: prem(233);
+    @include mq(md) {
+        margin-top: prem(433);
+    }
+}
+
+.p-flow__title-content {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-flow__text {
+    margin-top: prem(56);
+    font-size: prem(12);
+    font-weight: $regular;
+    line-height: 1;
+    letter-spacing: 0.24px;
+    @include mq(md) {
+        margin-top: prem(9);
+        font-size: prem(18);
+        line-height: 2;
+    }
+}
+
+.p-flow__list {
+    margin-top: prem(40);
+    @include mq(md) {
+        margin-top: prem(112);
+    }
+}

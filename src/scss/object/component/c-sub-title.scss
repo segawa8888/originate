@@ -1,0 +1,25 @@
+@use 'foundation' as *;
+
+.c-sub-title {
+    color: $c-black;
+    font-size: prem(12);
+    font-weight: $bold;
+    letter-spacing: 0.24px;
+    position: relative;
+    &::after {
+        content: '';
+        background-color: $c-black;
+        height:prem(1);
+        position: absolute;
+        bottom: prem(-20);
+        left: 0;
+        width:prem(100);
+        @include mq(md) {
+            height:prem(2)
+        }
+    }
+    @include mq(md) {
+        font-size: prem(16);
+        letter-spacing: 0.64px;
+    }
+}

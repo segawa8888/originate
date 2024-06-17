@@ -1,0 +1,102 @@
+@use 'foundation' as *;
+
+.p-mv {
+    position: relative;
+    z-index: 1;
+    margin-top: prem(75);
+    @include mq(md) {
+        margin-top: prem(112);
+    }
+}
+
+.p-mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.p-mv__logo {
+    position: absolute;
+    top: prem(260);
+    z-index: 99;
+    max-width: prem(205);
+    width: 100%;
+    @include mq(md) {
+        position: static;
+        max-width: prem(398);
+    }
+}
+
+.p-mv__title-back {
+    @include mq(md) {
+        background-color: $c-white;
+        border-radius: prem(10);
+        margin-top: prem(15);
+        max-width: prem(662);
+        padding: prem(5) prem(23) 0 prem(5);
+    }
+}
+
+.p-mv__title-wrap {
+    padding-left: prem(16);
+    @include mq(md) {
+        position: absolute;
+        z-index: 2;
+        bottom: prem(-66);
+        left: 12.5%;
+    }
+}
+
+.p-mv__main-title {
+    font-size: prem(32);
+    line-height: 1.6;
+    font-weight: $bold;
+    margin-top: prem(15);
+    letter-spacing: 0.64px;
+    @include mq(md){
+        font-size: prem(44);
+    }
+}
+
+.p-mv__sub-wrap {
+    @include mq(md) {
+        display: flex;
+        gap:0 prem(20);
+        align-items:baseline;
+        margin-top: prem(20);
+    }
+}
+
+.p-mv__sub-date {
+    margin-top: prem(15);
+    color:$c-blue;
+    font-size: prem(28);
+    font-weight: $bold;
+    @include mq(md) {
+        font-size: prem(32);
+        margin-top: initial;
+    }
+}
+
+.p-mv__sub-text {
+    margin-top: prem(15);
+    font-size: prem(18);
+    font-weight: 600;
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-mv__swiper,
+.p-mv__swiper .swiper-img,
+.p-mv__swiper .swiper-img img {
+    min-height:prem(322);
+    border-radius:prem(10);
+    @include mq(md) {
+        min-height:prem(575);
+    }
+}
+
+.p-mv__swiper .swiper-img img {
+    width: 100%;
+    object-fit: cover;
+}

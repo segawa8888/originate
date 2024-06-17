@@ -1,0 +1,49 @@
+@use 'foundation' as *;
+
+.c-btn {
+    background-color: $c-black;
+    color:$c-white;
+    font-size: prem(14);
+    font-weight: $bold;
+    border-radius: prem(50);
+    display: flex;
+    max-width: prem(254);
+    width: 100%;
+    padding: prem(18) prem(50) prem(18) prem(45);
+    justify-content: center;
+    gap:0 prem(20);
+    position: relative;
+    @include mq(md) {
+        font-size: prem(18);
+        max-width: prem(364);
+        padding: prem(22) prem(60) prem(22) prem(50);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: prem(20);
+        width: prem(10);
+        height: prem(10);
+        display: inline-block;
+        background-image: url(../images/common/arrow_right_wh.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+        @include mq(md) {
+            right:prem(30);
+            width:prem(16);
+            height:prem(16);
+        }
+    }
+
+    &.-black {
+        border: prem(1) solid $c-black;
+        color: $c-black;
+        background-color: transparent;
+        &:after {
+            background-image: url(../images/common/angle_right_bk.png);
+        }
+    }
+}

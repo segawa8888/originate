@@ -1,0 +1,77 @@
+@use 'foundation' as *;
+
+.p-sub-presenter {
+    margin-top: prem(105);
+    @include mq(md) {
+        margin-top: prem(80);
+    }
+}
+
+.p-sub-presenter__mv-items {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.p-sub-presenter__mv-item:first-child {
+    @include mq(md) {
+        max-width: prem(442);
+    }
+}
+
+.p-sub-presenter__mv-item:last-child {
+    margin:0 prem(-16);
+    @include mq(md) {
+        margin:0 prem(-60) 0 0;
+    }
+}
+
+.p-sub-presenter__mv-title {
+    margin-top: prem(40);
+    font-size: prem(20);
+    font-weight: $bold;
+    line-height: 1.7;
+    letter-spacing: 2px;
+    @include mq(md) {
+        margin-top: prem(72);
+        font-size: prem(36);
+        line-height: 1.5;
+    }
+}
+
+.p-sub-presenter__mv-statuses {
+    margin-top: prem(35);
+    @include mq(md) {
+        margin-top: prem(51);
+    }
+}
+
+.p-sub-presenter__mv-status {
+    font-size: prem(14);
+    font-weight: $bold;
+    line-height: 2;
+    @include mq(md) {
+        font-size: prem(16);
+    }
+}
+
+.p-sub-presenter__mv-name {
+    margin-top: prem(5);
+    font-size: prem(18);
+    font-weight: $bold;
+    line-height: 2;
+    letter-spacing: 0.36px;
+    @include mq(md) {
+        font-size: prem(24);
+    }
+}
+
+.p-sub-presenter__mv-img {
+    margin-top: prem(29);
+    @include mq(md) {
+        margin-top: initial;
+        max-width: prem(640);
+    }
+}

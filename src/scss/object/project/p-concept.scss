@@ -1,0 +1,82 @@
+@use 'foundation' as *;
+
+.p-concept {
+    position: relative;
+    padding-top: prem(85);
+    padding-bottom: prem(90);
+    background-color: $c-white;
+    border-radius: 0px 0px 0px prem(90);
+    &::after {
+        content: '';
+        background-image: url(../images/top/top_concept_back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: prem(248);
+        width:100%;
+        position: absolute;
+        bottom: prem(-158);
+        left: 0;
+        z-index:-1;
+        @include mq(md) {
+            height: prem(543);
+            bottom:prem(-343);
+        }
+    }
+    @include mq(md) {
+        padding-top: prem(167);
+        padding-bottom: prem(140);
+        border-radius: 0px 0px 0px prem(200);
+    }
+}
+
+.p-concept__items {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-concept__item:nth-child(n+2) {
+    margin-top: prem(56);
+    @include mq(md) {
+        margin-top: initial;
+        margin-left: prem(255);
+    }
+}
+
+.p-concept__item-title {
+    font-size: prem(30);
+    font-weight: $bold;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+    @include mq(md) {
+        font-size: prem(40);
+        line-height: 1.5;
+        letter-spacing: 1.6px;
+    }
+}
+
+.p-concept__item-text {
+    margin-top: prem(35);
+    font-size: prem(15);
+    line-height: 1.7;
+    font-weight: $regular;
+    letter-spacing: 0.9px;
+    @include mq(md) {
+        font-size: prem(18);
+        line-height: 1.9;
+        letter-spacing: 1.08px;
+        margin-top: prem(50);
+    }
+}
+
+.p-concept__item-btn {
+    margin-top: prem(40);
+    margin-left: prem(53);
+    @include mq(md) {
+        margin-left: initial;
+        margin-top: prem(50);
+    }
+}
+

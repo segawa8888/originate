@@ -1,0 +1,118 @@
+@use 'foundation' as *;
+
+.p-operators {
+    margin-top: prem(75);
+    margin-bottom: prem(100);
+    @include mq(md) {
+        margin-top: prem(110);
+        margin-bottom: prem(110);
+    }
+}
+
+.p-operators__items {
+    margin-top: prem(56);
+    @include mq(md) {
+        margin-top: prem(82);
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+}
+
+.p-operators__item:nth-child(n+2) {
+    margin-top: prem(45);
+    @include mq(md) {
+        max-width: prem(464);
+        width: 100%;
+        margin-top: prem(60);
+    }
+}
+
+.p-operators__item-title {
+    font-size: prem(18);
+    font-weight: $bold;
+    letter-spacing: 0.36px;
+    border-bottom: prem(1) solid $c-black;
+    padding-bottom: prem(10);
+    @include mq(md) {
+        font-size: prem(20);
+        font-style: normal;
+        letter-spacing: 0.8px;
+        padding-bottom: prem(15);
+    }
+}
+
+.p-operators__item-members {
+    @include mq(md) {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+}
+
+.p-operators__item-member {
+    margin-top: prem(20);
+    @include mq(md) {
+        max-width: prem(464);
+        width: 100%;
+    }
+    span {
+        font-size: prem(14);
+        font-weight: $bold;
+        letter-spacing: 1.26px;
+        @include mq(md) {
+            font-size: prem(16);
+        }
+    }
+
+    p {
+        color: #3D3D3D;
+        font-size: prem(14);
+        font-weight: $regular;
+        line-height: 1.7;
+        letter-spacing: 1.4px;
+        margin-top: prem(5);
+        @include mq(md) {
+            letter-spacing: 0.56px;
+        }
+    }
+
+    &:nth-child(n+2) {
+        margin-top: prem(25);
+    }
+}
+
+.p-operator__item-img {
+    max-width: prem(146.324);
+    width: 100%;
+    margin-top: prem(20);
+    @include mq(md) {
+        max-width: prem(200);
+    }
+}
+
+.p-operators__item-sub__title {
+    font-size: prem(14);
+    font-weight: $bold;
+    letter-spacing: 1.26px;
+    margin-top: prem(15);
+    @include mq(md) {
+        font-size: prem(16);
+        letter-spacing: 0.64px;
+        margin-top: prem(20);
+    }
+}
+
+.p-operators__item-text {
+    font-size: prem(14);
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+    margin-top: prem(15);
+    @include mq(md) {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.96px;
+        margin-top: prem(10);
+    }
+}
+

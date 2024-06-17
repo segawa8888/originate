@@ -1,0 +1,126 @@
+@use 'foundation' as *;
+
+.p-flow-list {
+    @include mq(md){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.p-flow-list__item {
+    position: relative;
+    border-radius: prem(5);
+    border: prem(1) solid #EDEDED;
+    padding:prem(15) prem(19);
+    @include mq(md){
+        padding:prem(20) prem(35);
+        max-width:31.5%;
+        width: 100%;
+    }
+}
+
+.p-flow-list__item + .p-flow-list__item {
+    margin-top: prem(30);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.p-flow-list__item:nth-child(n+2) {
+    margin-top: prem(84);
+    @include mq(md) {
+        margin-top: initial;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: prem(-45);
+        background-image: url(../images/common/arrow_bottom_bk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: prem(17);
+        height:prem(17);
+        @include mq(md) {
+            top: 50%;
+            transform: translateY(-50%);
+            left:prem(-21.5);
+            background-image: url(../images/common/arrow_right_bk.png);
+        }
+    }
+}
+
+.p-flow-list__item:nth-of-type(3n+1) {
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+.p-flow-list__item:nth-of-type(n+4) {
+    @include mq(md){
+        margin-top: prem(70);
+    }
+}
+
+.p-flow-list__item a {
+    display: block;
+    height: 100%;
+}
+
+.p-flow-list__item-img {
+    width: 100%;
+    margin-top: prem(10);
+    @include mq(md) {
+        margin-top: prem(51);
+    }
+}
+
+.p-flow-list__item:nth-child(3) .p-flow-list__item-img {
+    @include mq(md) {
+        margin-top: prem(10);
+    }
+}
+
+.p-flow-list__item-img img {
+    width: 100%;
+    aspect-ratio: 360/186;
+    object-fit: cover;
+}
+
+.p-flow-list__item-step {
+    color:$c-blue;
+    font-size: prem(14);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.56px;
+    @include mq(md){
+        font-size: prem(16);
+        letter-spacing: 0.64px;
+    }
+}
+
+.p-flow-list__item-title {
+    margin-top: prem(10);
+    font-size: prem(18);
+    font-weight: $bold;
+    line-height: 1.7;
+    @include mq(md){
+        margin-top: prem(18);
+        font-size: prem(24);
+    }
+}
+
+.p-flow-list__item-text {
+    margin-top: prem(10);
+    font-size: prem(15);
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+    @include mq(md){
+        margin-top: prem(20);
+        font-size: prem(16);
+        line-height: 2;
+        letter-spacing: 0.96px;
+    }
+}

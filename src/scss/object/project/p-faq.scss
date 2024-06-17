@@ -1,0 +1,41 @@
+@use 'foundation' as *;
+
+.p-faq {
+    padding-top: prem(75);
+    background-color: $c-gray;
+    border-radius: 0 0 prem(90) 0;
+    position: relative;
+    padding-bottom: prem(90);
+    margin-top: prem(60);
+    @include mq(md) {
+        padding-top: prem(110);
+        border-radius: 0 0 prem(200) 0;
+        padding-bottom: prem(200);
+        margin-top: prem(110);
+    }
+
+    &::after {
+        content: '';
+        background-image: url(../images/top/top_faq_back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: prem(248);
+        width:100%;
+        position: absolute;
+        bottom: prem(-120);
+        left: 0;
+        z-index:-1;
+        @include mq(md) {
+            height: prem(543);
+            bottom:prem(-295);
+        }
+    }
+}
+
+.p-faq__list {
+    margin-top: prem(56);
+    @include mq(md) {
+        margin-top: prem(82);
+    }
+}

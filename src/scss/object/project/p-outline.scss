@@ -1,0 +1,141 @@
+@use 'foundation' as *;
+
+.p-outline {
+    margin-top: prem(75);
+    @include mq(md) {
+        margin-top: prem(110);
+    }
+}
+
+.p-outline__items {
+    margin-top: prem(56);
+    @include mq(md) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.p-outline__item:first-child {
+    @include mq(md) {
+        max-width: prem(563);
+        width: 100%;
+    }
+}
+
+.p-outline__item-table {
+    display: block;
+    width: 100%;
+    tbody,tr {
+        width: 100%;
+        display: block;
+    }
+
+    tr {
+        border-bottom: prem(1) solid $c-black;
+        padding-top: prem(10);
+        padding-bottom: prem(20);
+        display: flex;
+        flex-wrap:wrap;
+        text-align: left;
+        @include mq(md) {
+            flex-wrap: initial;
+            padding-bottom: prem(30);
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    tr:first-child {
+        @include mq(md) {
+            border-top: prem(1) solid $c-black; 
+        }
+    }
+
+    th,td {
+        width: 100%;
+        display: block;
+        @include mq(md) {
+            width: initial;
+        }
+    }
+
+    th {
+        font-size: prem(18);
+        font-weight: $bold;
+        letter-spacing: 0.36px;
+        @include mq(md) {
+            font-size: prem(20);
+            font-weight: $medium;
+            letter-spacing: 0.8px;
+        }
+    }
+
+    td {
+        font-size: prem(14);
+        line-height: 1.7;
+        letter-spacing: 0.84px;
+        @include mq(md) {
+            max-width: prem(398);
+            text-align: right;
+            font-size: prem(16);
+            letter-spacing: 0.8px;
+            line-height: 2;
+        }
+
+        strong {
+            font-size: prem(16);
+            font-weight: $medium;
+            letter-spacing: 0.96px;
+            display: block;
+            @include mq(md) {
+                font-size: prem(20);
+                
+            }
+        }
+
+        small {
+            font-size: prem(10);
+            letter-spacing: 0.6px;
+            line-height: 1.7;
+            display: block;
+            margin-top: prem(5);
+            @include mq(md) {
+                letter-spacing: 0.4px;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.p-outline__item-table--contact {
+    font-size: prem(16);
+}
+
+.p-outline__item-title {
+    margin-top: prem(40);
+    font-size: prem(16);
+    font-weight: $medium;
+    line-height: 1.9;
+    @include mq(md) {
+        margin-top: initial;
+        font-size: prem(30);
+        font-weight: $bold;
+        line-height: 2;
+        letter-spacing: 1.2px;
+    }
+}
+
+.p-outline__item-btn {
+    margin-top: prem(40);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(md) {
+        margin-left: initial;
+        margin-top: prem(50);
+    }
+}
+

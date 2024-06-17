@@ -1,0 +1,14 @@
+@use 'foundation' as *;
+
+.c-title {
+    color: $c-black;
+    font-family: $font-accent;
+    font-size: prem(40);
+    font-weight: $bold;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    @include mq(md) {
+        font-size: prem(64);
+        letter-spacing: -1.92px;
+    }
+}

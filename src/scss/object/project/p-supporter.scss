@@ -1,0 +1,28 @@
+@use 'foundation' as *;
+
+.p-supporter {
+    margin-top: prem(200);
+    @include mq(md) {
+        margin-top: prem(450);
+    }
+}
+
+.p-supporter__title-content {
+    @include mq(md) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+.p-supporter__text {
+    margin-top: prem(56);
+    font-size: prem(15);
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+    @include mq(md) {
+        margin-top:initial;
+        font-size: prem(16);
+        letter-spacing: 0.96px;
+    }
+}

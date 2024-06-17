@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>Originate</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' integrity='sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==' crossorigin='anonymous'/>
+  <!-- JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js' integrity='sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+
+  <header class="p-header l-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="./index.html">
+          <img src="./images/common/logo_bk.png" alt="Originate">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="#concept">コンセプト</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#timetable">タイムテーブル</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#flow">参加方法</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#outline">イベント概要</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#faq">よくある質問</a>
+          </li>
+          <li class="p-header__nav-item p-header__nav-item--contact">
+            <a href="#" target="_blank" rel="noopener">参加申込をする</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="p-header__wrap">
+        <a href="#" class="p-header__contact">参加申込</a>
+        <button class="p-header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__drawer js-drawer">
+          <nav class="p-header__drawer-nav">
+            <ul class="p-header__drawer-items">
+              <li class="p-header__drawer-item">
+                <a href="./index.html">top<br><span>トップ</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#timetable">time table<br><span>タイムテーブル</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#presenter">presenter<br><span>ピッチ登壇者</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#guests">guest<br><span>ゲスト</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#outline">outline<br><span>イベント概要</span></a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#faq">faq<br><span>よくある質問</span></a>
+              </li>
+              <li class="p-header__drawer-item p-header__drawer-item--contact">
+                <a href="#" target="_blank" rel="noopener">イベント参加申込をする</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="p-mv">
+      <div class="p-mv__inner">
+        <div class="p-mv__swiper swiper js-mv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv01.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv02.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv03.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv01.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv02.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv03.jpg" alt="省略">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-mv__title-wrap">
+          <div class="p-mv__logo">
+            <img src='./images/common/logo_wh.png' alt='Originate' width='' height='' loading='lazy'>
+          </div>
+          <div class="p-mv__title-back js-fade">
+            <h2 class="p-mv__main-title">挑戦している人を<br class="u-mobile">応援する<br>
+              愛媛発の起業家ピッチ<br class="u-mobile">イベント</h2>
+              <div class="p-mv__sub-wrap">
+                <datetime class="p-mv__sub-date">2024.03.23 Sat.</datetime>
+                <p class="p-mv__sub-text">場所：E3 HALL Buffet Party  (愛媛)</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="concept" class="p-concept">
+      <div class="p-concept__wrapper">
+        <div class="p-concept__inner l-inner">
+          <div class="p-concept__content">
+            <div class="p-concept__items">
+              <div class="p-concept__item">
+                <h2 class="c-title js-fade">concept</h2>
+                <p class="c-sub-title js-fade">コンセプト</p>
+              </div>
+              <div class="p-concept__item js-fade">
+                <h3 class="p-concept__item-title">誰でも起業に<br>挑戦しやすい場所を。</h3>
+                <p class="p-concept__item-text">originateは老若男女誰でも挑戦できて、その夢を叶えられる機会を生み出すことを目指したピッチイベントです。<br><br>
+                  革新的なアイデアで挑戦している起業家のピッチを聞いて、県内企業や先輩経営者達がサポーターとなり、アセットや知識、経験を提供してサポートする、そんな起業家と応援者を繋げる空間をつくります。<br><br>
+                  起業家を孤独にさせない仕組みづくりをベースに少しの勇気だけで多くの挑戦者が生まれる、そんな世界を愛媛発でスタートさせます。</p>
+                  <a href="" class="c-btn p-concept__item-btn">イベント参加申込をする</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow" class="p-flow">
+      <div class="p-flow__wrapper">
+        <div class="p-flow__inner l-inner">
+          <div class="p-flow__content">
+            <div class="p-flow__title-content">
+              <div class="p-flow__title-wrap">
+                <h2 class="c-title js-fade">flow</h2>
+                <p class="c-sub-title js-fade">起業家支援の流れ</p>
+              </div>
+              <p class="p-flow__text js-fade">今回のイベントでの起業家支援の流れです。</p>
+            </div>
+            <ul class="p-flow__list p-flow-list">
+              <li class="p-flow-list__item js-fade">
+                <p class="p-flow-list__item-step">Step 01</p>
+                <p class="p-flow-list__item-title">イベントに参加する</p>
+                <div class="p-flow-list__item-img">
+                  <img src="./images/top/top_flow01.png" alt="">
+                </div>
+                  <p class="p-flow-list__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+              </li>
+              <li class="p-flow-list__item js-fade">
+                <p class="p-flow-list__item-step">Step 02</p>
+                <p class="p-flow-list__item-title">起業家がピッチをする</p>
+                <div class="p-flow-list__item-img">
+                  <img src="./images/top/top_flow02.png" alt="">
+                </div>
+                  <p class="p-flow-list__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+              </li>
+              <li class="p-flow-list__item js-fade">
+                <p class="p-flow-list__item-step">Step 03</p>
+                <p class="p-flow-list__item-title">サポーター企業が起業家を<br class="u-desktop">直接、<br class="u-mobile">支援/応援する</p>
+                <div class="p-flow-list__item-img">
+                  <img src="./images/top/top_flow03.png" alt="">
+                </div>
+                  <p class="p-flow-list__item-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timetable" class="p-timetable">
+      <div class="p-timetable__wrapper">
+        <div class="p-timetable__inner l-inner">
+          <h2 class="c-title js-fade">timetable</h2>
+          <p class="c-sub-title js-fade">タイムテーブル</p>
+          <div class="p-timetable__content">
+            <div class="p-timetable__items">
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">13:00</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">オリエンテーション</p>
+                  <p class="p-timetable__item-text">ご挨拶、当日の流れなどを説明します</p>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">13:20</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">トークセッション：「起業家なら」<br class="u-mobile">
+                    （ゲスト全員参加）</p>
+                  <p class="p-timetable__item-text">トークセッションの説明が入ります。トークセッションの説明が入ります。トークセッションの説明が入ります。トークセッションの説明が入ります。トークセッションの説明が入ります。</p>
+                  <div class="p-timetable__item-members">
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">14:20</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">休憩・交流</p>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">14:35</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">シードステージの起業家のピッチ</p>
+                  <p class="p-timetable__item-text">5名の起業家に1人15分ずつ発表していただきます。<br class="u-desktop">ピッチ(約7分)、質疑応答(約5分)、スライドの内容(約2分)</p>
+                  <div class="p-timetable__item-members">
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                    <div class="p-timetable__item-member">
+                      <div class="p-timetable__item-member-img">
+                        <picture>
+                          <source srcset="./images/top/top_timetable_shiraishi_pc.png" media="(min-width: 768px)" type="image/png">
+                          <img src="./images/top/top_timetable_shiraishi_sp.png" alt='' width='' height='' loading='lazy'>
+                        </picture>
+                      </div>
+                      <p class="p-timetable__item-member__name">白石 綾</p>
+                      <p class="p-timetable__item-member-text">サステナブルファッション関係</p>
+                      <p class="p-timetable__item-member-status">起業準備中</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">16:00</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">閉会</p>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">17:30</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">アフターパーティー（＠E3ホール）</p>
+                  <p class="p-timetable__item-text">アフターパーティでは、参加者同士がリラックスした雰囲気で交流できる場を提供します。新しいつながりやビジネスのチャンスを広げる機会にもなります。<br><br><strong>アフターパーティ内で連携内容の発表</strong></p>
+                </div>
+              </div>
+              <div class="p-timetable__item js-fade">
+                <p class="p-timetable__item-time">
+                  <time datetime="2024-03-23">19:30</time>
+                </p>
+                <div class="p-timetable__item-content">
+                  <p class="p-timetable__item-heading">アフターパーティー終了</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="presenter" class="p-presenter">
+      <div class="p-presenter__wrapper">
+        <div class="p-presenter__inner l-inner">
+          <h2 class="c-title js-fade">presenter</h2>
+          <p class="c-sub-title js-fade">ピッチ登壇する起業家たち</p>
+          <div class="p-presenter__items">
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-presenter__item js-fade">
+              <a href="">
+                <div class="p-presenter__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-presenter__item-content">
+                  <h3 class="p-presenter__item-title">馬場 早希</h3>
+                  <p class="p-presenter__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-presenter__status">OEM Branding</p>
+                  <p class="p-presenter__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guests" class="p-guests">
+      <div class="p-guests__wrapper">
+        <div class="p-guests__inner l-inner">
+          <h2 class="c-title js-fade">guests</h2>
+          <p class="c-sub-title js-fade">ゲスト</p>
+          <div class="p-guests__items">
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+            <div class="p-guests__item js-fade">
+              <a href="">
+                <div class="p-guests__item-img">
+                  <picture>
+                    <source srcset="./images/top/top_presenter01_pc.png" media="(min-width: 768px)" type="image/png">
+                    <img src="./images/top/top_presenter01_sp.png" alt='' width='' height='' loading='lazy'>
+                  </picture>
+                </div>
+                <div class="p-guests__item-content">
+                  <h3 class="p-guests__item-title">馬場 早希</h3>
+                  <p class="p-guests__text">
+                    FEMTECH Original Product Wholesale
+                  </p>
+                  <p class="p-guests__status">OEM Branding</p>
+                  <p class="p-guests__intro">紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります紹介文が入ります</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="supporter" class="p-supporter">
+      <div class="p-supporter__wrapper">
+        <div class="p-supporter__inner l-inner">
+          <div class="p-supporter__title-content">
+            <div class="p-supporter__title-wrap">
+              <h2 class="c-title js-fade">supporter</h2>
+              <p class="c-sub-title js-fade">サポーター</p>
+            </div>
+            <p class="p-supporter__text js-fade">今回のイベントで「物」「場所」「コト」を提供していただける企業様</p>
+          </div>
+          <ul class="p-supporter__list p-supporter-list">
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="1">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="1">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="2">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="2">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="3">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="3">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="4">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="4">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="5">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="5">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="6">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="6">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="7">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="7">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="8">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="8">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="9">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="9">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="10">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="10">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="11">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="11">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+            <li class="p-supporter-list__wrap">
+              <div class="p-supporter-list__item js-modal-open" data-target="12">
+                <div class="p-supporter-list__item-img">
+                  <img src="./images/top/top_supporter01.png" alt="">
+                </div>
+                <div class="p-supporter-list__item-text">
+                  <a href="">企業のHP</a>
+                </div>
+              </div>
+              <div class="p-supporter-list__modal p-modal js-modal" id="12">
+                <div class="p-modal__inner">
+                  <button class="p-modal__close-button js-modal-close">
+                  </button>
+                  <div class="p-modal__img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <p class="p-modal__title">株式会社XXXXXXXXXX</p>
+                  <a href="" class="p-modal__link">https://xxxxxx.com</a>
+                  <p class="p-modal__text">会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります会社の紹介が入ります</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="event" class="p-event">
+      <div class="p-event__wrapper">
+        <div class="p-event__inner l-inner">
+          <div class="p-event__content">
+            <div class="p-event__title-wrap">
+              <p class="p-event__title js-fade">イベント、交流会に<br>参加しよう</p>
+              <p class="p-event__text js-fade">
+                起業家の方はもちろん、起業に興味がある方も<br>
+                愛媛の起業家たちの熱いピッチ会にぜひご参加ください。
+              </p>
+            </div>
+            <div class="p-event__price-wrap js-fade">
+              <p class="p-event__price-heading">参加費</p>
+              <p class="p-event__price-text">ライブ参加ならではのエネネルギーを感じてください。<br class="u-desktop">
+                交流会では新しいつながりを広げましょう。
+              </p>
+              <p class="p-event__price">(参加費)<strong>￥9,000</strong></p>
+              <ul class="p-event__lists">
+                <li class="p-event__list">登壇者、参加者と直接交流ができる</li>
+                <li class="p-event__list">アフターパーティーに参加ができる</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outline" class="p-outline">
+      <div class="p-outline__wrapper">
+        <div class="p-outline__inner l-inner">
+          <h2 class="c-title js-fade">outline</h2>
+          <p class="c-sub-title js-fade">イベント概要</p>
+          <div class="p-outline__items">
+            <div class="p-outline__item js-fade">
+              <table class="p-outline__item-table">
+                <tbody>
+                  <tr>
+                    <th>開催日時</th>
+                    <td>
+                      <strong>2024/03/24 Sat.  13:00〜19:30</strong>
+                      トークセッション/ピッチ会　 13:00〜16:00<br>
+                      アフターパーティー　 17:30〜19:30
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>場所</th>
+                    <td>
+                      <strong>E3 HALL Buffet Party</strong>
+                      〒790-8532 愛媛県松山市一番町３丁目１−１<br>松山三越6F<br>
+                      <a href="https://hall.agingcare-e3.co.jp/">https://hall.agingcare-e3.co.jp/</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>参加対象者</th>
+                    <td>
+                      <strong>
+                        ・起業家 or 起業を準備検討している方<br>
+                        ・事業継承を検討している方<br>
+                        ・愛媛で起業支援、創業支援をしている<br class="u-desktop">方および今後支援をしていきたい方
+                      </strong>
+                      <small>
+                        ※起業家および起業を準備・検討している対象者が優先となります。<br>
+                        お申込状況によって、上記対象外の方や士業・経営コンサルタントなど事務局が専門家と認める方からのお申込はお断りする場合がございますので予めご了承ください。
+                      </small>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>参加費</th>
+                    <td>
+                      <strong>￥9,000</strong>
+                      ピッチイベント/ アフターパーティー参加
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>お問い合わせ</th>
+                    <td class="p-outline__item-table--contact">
+                      <a href="#">お問い合わせはこちら</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-outline__item js-fade">
+              <h3 class="p-outline__item-title">愛媛のトップ企業を目指す<br class="u-desktop">起業家たちのピッチイベント。<br class="u-desktop">この公式サイトで申込受付中です。</h3>
+              <a href="" class="c-btn p-outline__item-btn">イベント参加申込をする</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="p-faq">
+      <div class="p-faq__wrapper">
+        <div class="p-faq__inner l-inner">
+          <h2 class="c-title js-fade">faq</h2>
+          <p class="c-sub-title js-fade">よくある質問</p>
+          <ul class="p-faq__list p-faq-list">
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>当日現地でも参加申込は可能ですか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </li>
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>途中入場、途中退場はできますか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>ご自由に入退場していただけます。</p>
+            </li>
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>会場に駐車場はありますか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </li>
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>子供は同伴できますか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </li>
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>後日アーカイブ動画視聴できますか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </li>
+            <li class="p-faq-list__item js-fade">
+              <p class="p-faq-list__item-question js-faq-question"><span>Q</span>キャンセルはできますか？</p>
+              <p class="p-faq-list__item-answer"><span>A</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsor" class="p-sponsor">
+      <div class="p-sponsor__wrapper">
+        <div class="p-sponsor__inner l-inner">
+          <div class="p-sponsor__title-content">
+            <div class="p-sponsor__title-wrap">
+              <h2 class="c-title js-fade">sponsor</h2>
+              <p class="c-sub-title js-fade">スポンサー</p>
+            </div>
+            <p class="p-sponsor__text js-fade">この取り組みに共感していただき資金を提供していただけるパートナー企業様</p>
+          </div>
+          <div class="p-sponsor__content">
+            <p class="p-sponsor__item-title js-fade">
+              <span>
+                <img src='./images/icon/icon_diamond.png' alt='' width='' height='' loading='lazy'>
+              </span>
+              Diamond Sponsor
+            </p>
+            <ul class="p-sponsor__items">
+              <li class="p-sponsor__item-wrap">
+                <div class="p-sponsor__item js-fade">
+                  <div class="p-sponsor__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor__item-text">
+                    <a href="">企業のHPはこちら</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="p-sponsor__lists">
+            <p class="p-sponsor-lists__title js-fade">
+              <span>
+                <img src='./images/icon/icon_platinum.png' alt='' width='' height='' loading='lazy'>
+              </span>
+              Diamond Sponsor
+            </p>
+            <ul class="p-sponsor__list p-sponsor-list">
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <p class="p-sponsor-lists__title js-fade">
+              <span>
+                <img src='./images/icon/icon_gold.png' alt='' width='' height='' loading='lazy'>
+              </span>
+              Gold Sponsor
+            </p>
+            <ul class="p-sponsor__list p-sponsor-list">
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+              <li class="p-sponsor-list__wrap js-fade">
+                <div class="p-sponsor-list__item">
+                  <div class="p-sponsor-list__item-img">
+                    <img src="./images/top/top_supporter01.png" alt="">
+                  </div>
+                  <div class="p-sponsor-list__item-text">
+                    <a href="">企業のHP</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="operators" class="p-operators">
+      <div class="p-operators__wrapper">
+        <div class="p-operators__inner l-inner">
+          <h2 class="c-title js-fade">operators</h2>
+          <p class="c-sub-title js-fade">イベント運営者</p>
+          <div class="p-operators__items">
+            <div class="p-operators__item js-fade">
+              <p class="p-operators__item-title">実行委員会</p>
+              <div class="p-operators__item-members">
+                <div class="p-operators__item-member">
+                  <span>坂本 大典</span>
+                  <p>株式会社ニューズピックス  執行役員 CRO/新規事業担当</p>
+                </div>
+                <div class="p-operators__item-member">
+                  <span>稲見 益輔</span>
+                  <p>中央会計株式会社  取締役/松山オフィス代表</p>
+                </div>
+                <div class="p-operators__item-member">
+                  <span>永渕 竜朗</span>
+                  <p>三浦工業株式会社  システム統括部長</p>
+                </div>
+                <div class="p-operators__item-member">
+                  <span>河合 崇</span>
+                  <p>ユナイテッドシルク株式会社  代表取締役</p>
+                </div>
+                <div class="p-operators__item-member">
+                  <span>大西 竜治</span>
+                  <p>WM & Creators 株式会社  代表取締役</p>
+                </div>
+                <div class="p-operators__item-member">
+                  <span>宮川 博之</span>
+                  <p>オプティマ・ベンチャーズ株式会社  代表取締役</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-operators__item js-fade">
+              <p class="p-operators__item-title">運営法人</p>
+              <div class="p-operator__item-img">
+                <img src='./images/common/logo_tateyoko.png' alt='' width='' height='' loading='lazy'>
+              </div>
+              <p class="p-operators__item-sub__title">一般社団法人たてヨコ</p>
+              <p class="p-operators__item-text">
+                知人が友人となり、仲間になる愛媛発のシナジーコミュニティ「たてヨコ愛媛」を運営。官公庁とも営利企業とも違う、これまでになかった新しい第3の場所、存在として地域の社会課題解決に取り組んでいます。
+              </p>
+            </div>
+            <div class="p-operators__item js-fade">
+              <p class="p-operators__item-title">後援</p>
+              <p class="p-operators__item-sub__title">愛媛県 / 松山市</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="l-page-top c-page-top js-page-top">
+  </div>
+
+  <footer class="p-footer">
+    <div class="p-footer__wrapper">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__content">
+          <div class="p-footer__logo">
+            <a href="./index.html">
+              <img src="./images/common/logo_wh.png" width="" height="" alt="Originate" />
+            </a>
+          </div>
+          <nav class="p-footer-nav p-footer__nav">
+            <div class="p-footer-nav__items">
+              <div class="p-footer-nav__item">
+                <span class="p-footer-nav__title">event</span>
+                <ul class="p-footer-nav__lists">
+                  <li class="p-footer-nav__list">
+                    <a href="#concept">コンセプト</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="#timetable">タイムテーブル</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="#presenter">ピッチ登壇者</a>
+                  </li>
+                  <li class="p-footer-nav__list">
+                    <a href="#guests">ゲスト</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-footer-nav__item">
+                <span class="p-footer-nav__title">contact</span>
+                <ul class="p-footer-nav__lists">
+                  <li class="p-footer-nav__list p-footer-nav__list--contact">
+                    <a href="#">お問い合わせフォーム</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <p class="p-footer__copyright">© 2024 originate inc.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

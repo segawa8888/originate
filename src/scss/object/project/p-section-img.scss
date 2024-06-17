@@ -1,0 +1,7 @@
+@use 'foundation' as *;
+
+.p-section-img__concept {
+    margin-top: prem(-90);
+    background-image: url(../images/top/top_concept_back.jpg);
+    background-size: cover;
+}

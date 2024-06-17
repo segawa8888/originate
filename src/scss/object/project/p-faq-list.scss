@@ -1,0 +1,105 @@
+@use 'foundation' as *;
+
+.p-faq-list__item {
+    border-top: prem(1) solid $c-black;
+    padding-top: prem(10);
+    padding-bottom: prem(10);
+    @include mq(md) {
+        padding-top: prem(20);
+        padding-bottom: prem(20);
+    }
+    &:last-child {
+        border-bottom: prem(1) solid $c-black;
+    }
+}
+
+.p-faq-list__item-question {
+    padding-left: prem(34);
+    padding-right: prem(36);
+    position: relative;
+    font-size: prem(15);
+    letter-spacing: 0.9px;
+    font-weight: $medium;
+    text-indent: prem(-20);
+    cursor: pointer;
+    @include mq(md){
+        padding-left: prem(100);
+        font-size: prem(20);
+    }
+}
+
+.p-faq-list__item-question::before,
+.p-faq-list__item-question::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: prem(5);
+    width: prem(11);
+    height: prem(2);
+    background: $c-blue;
+    transition: .3s;
+    @include mq(md){
+        width:prem(24);
+        right:prem(8.3);
+    }
+}
+
+.p-faq-list__item-question::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.p-faq-list__item-question.is-open::after {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.p-faq-list__item-question span {
+    margin-left: prem(5);
+    margin-right: prem(10);
+    display: inline-block;
+    color: $c-blue;
+    font-family: $font-accent;
+    font-size: prem(20);
+    @include mq(md) {
+        font-size: prem(32);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: prem(20);
+    }
+}
+
+.p-faq-list__item-answer {
+    padding-left: prem(34);
+    padding-right: prem(16);
+    display: none;
+    font-size: prem(15);
+    text-indent: prem(-20);
+    background-color: $c-white;
+    padding-top: prem(10);
+    padding-bottom: prem(10);
+    margin-top: prem(10);
+    @include mq(md){
+        padding-top: prem(20);
+        padding-bottom: prem(20);
+        position: relative;
+        font-size: prem(20);
+        padding-left: prem(100);
+        margin-top: prem(20);
+    }
+}
+
+.p-faq-list__item-answer span {
+    margin-left: prem(10);
+    margin-right: prem(10);
+    display: inline-block;
+    color: $c-blue;
+    font-size: prem(20);
+    @include mq(md) {
+        font-size: prem(32);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: prem(20);
+    }
+}

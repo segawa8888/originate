@@ -1,0 +1,139 @@
+@use 'foundation' as *;
+
+.p-event {
+    margin-top: prem(64);
+    padding-top: prem(80);
+    background-color: $c-gray;
+    padding-bottom: prem(60);
+    @include mq(md) {
+        margin-top: prem(110);
+        padding-top: prem(120);
+        padding-bottom: prem(110);
+    }
+}
+
+.p-event__content {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-event__title {
+    font-size: prem(28);
+    line-height: 1.6;
+    font-weight: $bold;
+    @include mq(md) {
+        font-size: prem(48);
+        font-weight: $bold;
+        line-height: 1.7;
+        letter-spacing: 1.92px;
+    }
+}
+
+.p-event__text {
+    margin-top: prem(15);
+    font-size: prem(16);
+    line-height: 1.9;
+    font-weight: $medium;
+    @include mq(md) {
+        margin-top: prem(30);
+        font-size: prem(18);
+        letter-spacing: 1.08px;
+    }
+}
+
+.p-event__price-wrap {
+    background-color: $c-white;
+    border-radius: prem(10);
+    margin-top: prem(40);
+    @include mq(md) {
+        margin-top: initial;
+        max-width: prem(563);
+        width: 100%;
+    }
+}
+
+.p-event__price-heading {
+    background-color: $c-black;
+    font-size: prem(18);
+    color: $c-white;
+    font-weight: $bold;
+    text-align: center;
+    padding:prem(10) 0;
+    border-radius: prem(10) prem(10) 0 0;
+    @include mq(md) {
+        font-size: prem(32);
+        padding: prem(30) 0;
+        letter-spacing: 1.28px;
+    }
+}
+
+.p-event__price-text {
+    margin-top: prem(15);
+    font-size: prem(15);
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+    padding-left: prem(19);
+    padding-right: prem(19);
+    @include mq(md) {
+        font-size: prem(16);
+        letter-spacing: 0.96px;
+        line-height: 2;
+        text-align: center;
+    }
+}
+
+.p-event__price {
+    text-align: center;
+    color:$c-blue;
+    margin-top: prem(10);
+    font-size: prem(12);
+    @include mq(md) {
+        font-size: prem(16);
+    }
+    strong {
+        font-size: prem(24);
+        font-weight: $bold;
+        margin-left: prem(5);
+        @include mq(md) {
+            font-size: prem(32);
+        }
+    }
+}
+
+.p-event__lists {
+    margin-top: prem(10);
+    padding-bottom: prem(17);
+}
+
+.p-event__list {
+    position: relative;
+    font-size: prem(15);
+    font-weight: $medium;
+    letter-spacing: 0.9px;
+    text-align: center;
+    @include mq(md) {
+        font-size: prem(16);
+        letter-spacing: 0.96px;
+    }
+    &:nth-child(n+2) {
+        margin-top: prem(5);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: prem(20);
+        background-image: url(../images/icon/icon_check_blue.png);
+        width:prem(20);
+        height:prem(20);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include mq(md) {
+            left:prem(80);
+        }
+    }
+}
+

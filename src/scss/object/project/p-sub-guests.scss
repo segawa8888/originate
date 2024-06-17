@@ -1,0 +1,26 @@
+@use 'foundation' as *;
+
+.p-sub-guests {
+    margin-top: prem(75);
+    margin-bottom: prem(135);
+    @include mq(md) {
+        margin-top: prem(117);
+        margin-bottom: prem(200);
+    }
+}
+
+.p-sub-guests__item-title {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-image: url(../images/common/arrow_right_blue.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:prem(10);
+        height:prem(10);
+    }
+}

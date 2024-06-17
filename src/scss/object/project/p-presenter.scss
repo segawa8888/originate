@@ -1,0 +1,126 @@
+@use 'foundation' as *;
+
+.p-presenter {
+    margin-top: prem(75);
+    position: relative;
+    &::after {
+        content: '';
+        background-color: $c-gray;
+        max-width: 77%;
+        width: 100%;
+        height:prem(742);
+        position: absolute;
+        top:prem(228);
+        left: 0;
+        z-index:-1;
+        @include mq(md) {
+            max-width:88%;
+            top:prem(368);
+            height:prem(878);
+        }
+    }
+}
+
+.p-presenter__items {
+    margin-top: prem(61);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:prem(100) 0;
+    @include mq(md) {
+        justify-content: initial;
+        margin-top: prem(122);
+        gap:prem(182) prem(99);
+    }
+}
+
+.p-presenter__item {
+    max-width:prem(165);
+    width: 100%;
+    position: relative;
+    @include mq(md) {
+        max-width: prem(265);
+    }
+}
+
+.p-presenter__item:nth-child(4),
+.p-presenter__item:nth-child(10) {
+    @include mq(md) {
+        margin-left: auto;
+    }
+}
+
+.p-presenter__item-img {
+    max-width: prem(155);
+    width: 100%;
+    @include mq(md) {
+        max-width: prem(241);
+    }
+}
+
+.p-presenter__item-content {
+    max-width: prem(150);
+    width: 100%;
+    background-color:$c-white;
+    border-radius: prem(5);
+    padding: prem(10) prem(15) prem(15) prem(15);
+    box-shadow: 0px 0px prem(25) 0px rgba(173, 173, 173, 0.10);
+    z-index:10;
+    position: absolute;
+    top:prem(122); 
+    right: 0;
+    @include mq(md) {
+        max-width: prem(241);
+        top:prem(226);
+        padding:prem(10) prem(10) prem(10) prem(15);
+    }
+}
+
+.p-presenter__item-title {
+    position: relative;
+    font-size: prem(16);
+    font-weight: $bold;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: prem(20);
+        background-image: url(../images/common/arrow_right_blue.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:prem(10);
+        height:prem(10);
+        @include mq(md) {
+            right:prem(17);
+        }
+    }
+}
+
+.p-presenter__text {
+    margin-top: prem(10);
+    font-size: prem(12);
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    @include mq(md) {
+        margin-top: prem(15);
+        font-size: prem(14);
+        letter-spacing: 0.56px;
+    }
+}
+
+.p-presenter__status {
+    margin-top: prem(7);
+    font-size: prem(12);
+    letter-spacing: 0.48px;
+}
+
+.p-presenter__intro {
+    display: none;
+    @include mq(md) {
+        display: block;
+        margin-top: prem(20);
+        font-size: prem(12);
+        line-height: 1.7;
+    }
+}
